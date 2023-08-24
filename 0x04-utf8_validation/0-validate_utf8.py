@@ -8,7 +8,7 @@ def validUTF8(data):
     represents a valid UTF-8 encoding.
     """
     for i in data:
-        if i in range (0, 255):
+        if i in range(0, 256):
             continue
         else:
             return False
