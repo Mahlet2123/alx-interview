@@ -40,17 +40,17 @@ def solve_nqueens(N, board, row):
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: nqueens N")
+        print("Usage: nqueens N\n")
         sys.exit(1)
 
     try:
         N = int(sys.argv[1])
     except ValueError:
-        print("N must be a number")
+        print("N must be a number\n")
         sys.exit(1)
 
     if N < 4:
-        print("N must be at least 4")
+        print("N must be at least 4\n")
         sys.exit(1)
 
     board = [[0 for _ in range(N)] for _ in range(N)]
